@@ -3,27 +3,27 @@ objdump -S main.o > asm.asm
 =================================================================
 ./main.o
 Simple integer multiplication 
-All amount of ticks 12448196934, number of ticks per full pass = 622409846, ticks per operation 6, time 259 ms, GFLOPS 0.370013
+All amount of ticks 13166270086, number of ticks per full pass = 658313504, ticks per operation 6, time 274 ms, GFLOPS 0.34979
 --------------------------------
-Integer multiplication on SSE2
-All amount of ticks 5880924634, number of ticks per full pass = 294046231, ticks per operation 12, time 122 ms, GFLOPS 0.784634
+Integer multiplication on SSE4
+All amount of ticks 6119584966, number of ticks per full pass = 305979248, ticks per operation 12, time 127 ms, GFLOPS 0.753828
 --------------------------------
 Integer multiplication on AVX2
-All amount of ticks 3280463328, number of ticks per full pass = 164023166, ticks per operation 13, time 68 ms, GFLOPS 1.40969
+All amount of ticks 3431083395, number of ticks per full pass = 171554169, ticks per operation 14, time 71 ms, GFLOPS 1.34926
 --------------------------------
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-I have i7-4700hq @2.400GHz, because of that my teoretical max amount of Flops (whithout Turbo BOOST) 76.8 GFlops, but with turbo bust (3.4GHz) 108.8 GFlops 
+I have i7-4700hq @2.400GHz, because of that my teoretical max amount of Flops (whithout Turbo BOOST) 4 cores, AVX2 (16 (FLOP/cycle))*2.4= 153.6 GFlops, but with turbo bust (3.4GHz)= 217.6 GFlops 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Simple independent integer multiplication 
-All amount of ticks 4961217725, number of ticks per full pass = 248060886, ticks per operation 5, time 103 ms, GFLOPS 0.931587
+All amount of ticks 5201991211, number of ticks per full pass = 260099560, ticks per operation 5, time 108 ms, GFLOPS 0.888478
 --------------------------------
-Integer multiplication on SSE2
-All amount of ticks 1553497632, number of ticks per full pass = 77674881, ticks per operation 6, time 32 ms, GFLOPS 2.99532
+Integer multiplication on SSE4
+All amount of ticks 1656618080, number of ticks per full pass = 82830904, ticks per operation 6, time 34 ms, GFLOPS 2.80292
 --------------------------------
 Integer multiplication on AVX2
-All amount of ticks 776775836, number of ticks per full pass = 38838791, ticks per operation 6, time 16 ms, GFLOPS 6
+All amount of ticks 937925244, number of ticks per full pass = 46896262, ticks per operation 7, time 19 ms, GFLOPS 5.05263
 --------------------------------
 =================================================================
 rm main.o
