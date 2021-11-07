@@ -7,3 +7,8 @@ Parallel programming
 ```shell
 make
 ```
+
+
+Пример работы: 
+
+![result](src/result.png)

@@ -1,6 +1,6 @@
 all:
 	g++ main.cpp -g -lgomp -O0 -march=native -o main.o
-	objdump -S test.o > asm.asm
+	objdump -S main.o > asm.asm
 	@echo "================================================================="
 
 	./main.o
