@@ -207,7 +207,6 @@ void vector_independent_oper_mul_on_SSE4(int number_of_runs, int num_of_operatio
 		sum_time +=	std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now() - start_time).count();
 	}
 
-	// std::cout << int(vec_res1[0]) << int(vec_res1[1]) << int(vec_res1[2]) << int(vec_res1[3]) << int(vec_res2[0])<< int(vec_res2[1])<< int(vec_res2[2])<< int(vec_res2[3])  << std::endl;
 
 
 	std::cout << "All amount of ticks "<< sum_ticks << ", number of ticks per full pass = " <<  sum_ticks/number_of_runs << ", ticks per operation " << sum_ticks/number_of_runs/num_of_operations << ", time " << sum_time/number_of_runs  << " ms, GFLOPS "<< double(double(num_of_operations*8)/((double(sum_time)/double(number_of_runs)/1000)*1E9 )) << std::endl;
