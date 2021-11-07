@@ -2,3 +2,8 @@
 Parallel programming 
 
 
+Для запуска:
+
+```shell
+make
+```
