@@ -7,6 +7,7 @@ Parallel programming
 
 Задание 1: 
 Задача поиска максимального и минимального значений для заданного набора числовых данных
+
 Задание 2: 
 Интегрование
 (Я сделал метод трапеции)
@@ -24,5 +25,6 @@ make
 
 ![result](src/result.png)
 
-[Задание 1]()
-[Задание 2]()
+[Задание 1](https://github.com/disc0nn3ct/parallel_programming/blob/main/2%20hw%20(MPI)/min%26max%20in%20array%20(first%20ex).cpp)
+
+[Задание 2](https://github.com/disc0nn3ct/parallel_programming/blob/main/2%20hw%20(MPI)/integrall%20(second%20ex).cpp)
