@@ -6,7 +6,7 @@ all:
 
 	@echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
-	mpic++ "trapezium method integral (first ex).cpp" -o one.o -lm
+	mpic++ "min&max in array (first ex).cpp" -o one.o -lm
 	
 	@echo "================================================================="
 
@@ -18,7 +18,7 @@ all:
 	@echo "				Second"
 	@echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
-	mpic++ "integrall (second).cpp" -o main.o -lm
+	mpic++ "integrall (second ex).cpp" -o main.o -lm
 	
 	@echo "================================================================="
 
